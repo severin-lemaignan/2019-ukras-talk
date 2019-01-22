@@ -1,12 +1,10 @@
 
-child-robot interaction for learning
-====================================
+cognition, HRI & data: how to do together?
+==========================================
 
 ![Cover page](cover.png)
 
 
-This repository contains the slides of the talk during the 2018 [Symposium on
-Robots for Language
-Learning](https://sites.google.com/view/l2torsymposium/home).
+This repository contains the slides of my [UK-RAS2019](https://www.ukras.org/news-and-events/uk-ras/ukras19-about/) talk.
 
 All contents released under the Creative Commons Attribution-Share Alike license.
