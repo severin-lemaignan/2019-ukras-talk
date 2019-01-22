@@ -287,8 +287,7 @@ communication}, Research on Language and Computation 2006}
 
 \begin{frame}{Data!}
 
-    If we want to use machine learning, we need data (relevant to child-robot
-    interactions in a learning environment).
+    If we want to use machine learning, we need data.
     
     \pause
 
@@ -342,28 +341,6 @@ communication}, Research on Language and Computation 2006}
 \imageframe{freeplay/freeplay-overview2}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}{Freeplay sandox in a nutshell}
-
-    A task that exhibits...
-
-    \begin{itemize}
-        \item open, underspecified situations
-            \item complex social dynamics
-            \item natural interactions
-            \item rich semantics
-            \item interplay of many socio-cognitive functions
-    \end{itemize}
-
-    \pause
-
-    while being...
-    \begin{itemize}
-        \item reproducible/replicable experimental procedure
-        \item clear quantitative metrics
-        \item practical
-    \end{itemize}
-\end{frame}
 
 
 \begin{frame}{Social dynamics to be observed}
@@ -425,15 +402,6 @@ communication}, Research on Language and Computation 2006}
     \end{center}
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Two baselines}
-
-    \begin{center}
-        \includegraphics<1>[width=\linewidth]{pinsoro/pinsoro-baselines}
-        \includegraphics<2>[width=\linewidth]{pinsoro/pinsoro-baselines2}
-    \end{center}
-\end{frame}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -457,7 +425,8 @@ communication}, Research on Language and Computation 2006}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Mining the data}
+\section[Social kinematics]{Case study:\\
+understanding social kinematics}
 
 \videoframe[0.56]{figs/kinematics_social_dynamics/clip_skel_01.mp4}
 
@@ -541,8 +510,29 @@ Internal States from the Kinematics [...]} Frontiers
 
 \end{frame}
 
+\begin{frame}{Mean EFA projection of clips per social situation}
+
+    \only<1>{
+        The 20 clips were labelled after their salient social features
+        (\emph{aggressive}, \emph{excited}, \emph{aimless}, \emph{fun},
+        \emph{cooperative}, \emph{bored}, \emph{dominant}).
+
+        \vspace{2cm}
+        What happen if we project the ratings for 'aggressive' clips,
+        'excited' clips, etc. onto the 3 EFA factors?
+
+    }
+
+    \only<2->{
+    \begin{center}
+        \includegraphics<2>[width=\linewidth]{kinematics_social_dynamics/means-imbalance-vs-valence.png}
+        \includegraphics<3>[width=\linewidth]{kinematics_social_dynamics/means-imbalance-vs-engagement.png}
+    \end{center}
+    }
+
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section[DNNs for Social Robotics]{Deep learning of social interactions?}
+\section[What next?]{What next?}
 
 \videoframe[0.56]{figs/pinsoro/annotations.mp4?autostart}
 
@@ -574,81 +564,6 @@ Internal States from the Kinematics [...]} Frontiers
 
     Social behaviours; Social dynamics: \textbf{generation as well!}
 \end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}{What does that mean for CRI \& learning?}
-
-    \begin{columns}
-        \begin{column}{0.4\linewidth}
-            
-            \begin{center}
-                \includegraphics[width=0.9\linewidth]{joint-action-scenario-completed}
-            \end{center}
-        \end{column}
-        \begin{column}{0.6\linewidth}
-            \only<1-4> {
-            \begin{itemize}
-                \item<+-> We can reduce the socio-cognitive cost of
-                    collaboration by relying as much
-                    as possible on {\bf implicit (sub-conscious) social mechanisms}
-                \item<+-> (do not be scared of ambiguous/partially defined
-                    instructions/situations)
-                \item<+-> The robot needs to learn to recognise and interpret
-                    those social cues, hidden within complex social dynamics (in
-                    real-time!)
-                \item<+-> We have some raw material. Time to
-                    process it together!
-            \end{itemize}
-        }
-%            \only<5-> {
-%            \begin{itemize}
-%                \item<+-> Yet, {\bf learning does require cognitive effort \&
-%                    engagement}. We simply want to direct it to the right
-%                    subject.
-%            \end{itemize}
-%        }
-%
-        \end{column}
-    \end{columns}
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-{
-    \fullbackground[color=white]{c-r-t-succeed-dim}
-\begin{frame}[plain]
-
-    {\Large In summary:}
-
-    \begin{itemize}
-        \item<+-> Integration of \emph{social} robots in the classroom environment?
-        \item<+-> Role of the teacher? \emph{Transfer of autonomy} looks like a
-            promising lead.
-        \item<+-> \emph{Doing together} with the child will require a better
-            understanding of the social dynamics. Machine learning to the
-            rescue?
-        \item<+-> ...but the old assumption that full grounding of the
-            communication is necessary, does not hold.
-    \end{itemize}
-\end{frame}
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-{
-    \fullbackground[color=white]{c-r-t-succeed-dim}
-\begin{frame}[plain]
-
-    {\Large Two open questions for the aspiring PhDs:}
-
-    \begin{itemize}
-        \item<+-> What about group dynamics?
-        \item<+-> Over time, what place would a social robot take in the
-            classroom?
-    \end{itemize}
-\end{frame}
-}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -688,6 +603,15 @@ Internal States from the Kinematics [...]} Frontiers
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \videoframe[0.56]{figs/underworlds/underworlds.mp4?start=20}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Two baselines}
+
+    \begin{center}
+        \includegraphics<1>[width=\linewidth]{pinsoro/pinsoro-baselines}
+        \includegraphics<2>[width=\linewidth]{pinsoro/pinsoro-baselines2}
+    \end{center}
+\end{frame}
+
 
 \begin{frame}{Some building blocks exists}
 
